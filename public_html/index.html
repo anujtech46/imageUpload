@@ -1,0 +1,37 @@
+<!--<!DOCTYPE html>
+
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+<html ng-app="app">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p>Hello</p>
+        <div ui-view></div>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        
+        <script src="route/index.route.js"></script>
+        <script src="controller/index.controller.js"></script>
+    </body>
+</html>-->
+
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body ng-app="fileUpload" ng-controller="MyCtrl">
+        <script src="bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="controller/mainCtrl.js"></script>
+        <h1>Angular Node File Upload</h1>{{imageData}}
+        <div>
+            <!-- <img ng-src="{{imageData}}"> -->
+            <img data-ng-src="data:image/png;base64,{{imageData.data}}">
+        </div>
+    </body>
+</html>
